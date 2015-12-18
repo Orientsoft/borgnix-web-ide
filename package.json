@@ -1,0 +1,30 @@
+{
+  "name": "borgnix-ide",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orientsoft/borgnixIDE.git"
+  },
+  "author": "Xie Di",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Orientsoft/borgnixIDE/issues"
+  },
+  "homepage": "https://github.com/Orientsoft/borgnixIDE#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "react": "^0.14.3",
+    "reflux": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.17"
+  }
+}
