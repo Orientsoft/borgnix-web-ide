@@ -1,5 +1,14 @@
 extends layout
 
+block css
+  link(rel='stylesheet', href='stylesheets/style.css')
+  link(rel='stylesheet' href='vendor/bootstrap/css/bootstrap.css')
+  link(rel='stylesheet' href='vendor/react-ui-tree/react-ui-tree.css')
+
 block content
-  h1= title
-  p Welcome to #{title}
+  #app_container
+
+block js
+  script(src='javascripts/app/#{app_name}.js')
+  script(src='vendor/jquery/jquery.min.js')
+  script(src='vendor/bootstrap/js/bootstrap.min.js')
