@@ -10,10 +10,11 @@ borgnix-web-ide relies on Arduino IDE and Arduino-Makefile.
 Installation
 ------------
 1. git clone https://github.com/Orientsoft/borgnix-web-ide.git  
-2. modify config/config.json
-3. gulp watch  
-4. supervisor bin/www  
-5. visit in browser http://127.0.0.1:3000  
+2. npm i
+3. modify config/config.json
+4. gulp watch  
+5. supervisor bin/www  
+6. visit in browser http://127.0.0.1:3000  
 
 Function List  
 -------------
