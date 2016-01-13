@@ -1,7 +1,7 @@
 import React from 'react'
 import ToolboxActions from '../../actions/ToolboxActions'
 import ArduinoActions from '../../actions/ArduinoActions'
-import ArduinoStore from '../../actions/ArduinoStore'
+import ArduinoStore from '../../stores/ArduinoStore'
 
 class Nav extends React.Component {
   constructor(props) {

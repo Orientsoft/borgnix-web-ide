@@ -10,6 +10,8 @@ let pm = new ProjectManager({
 })
 
 let state = {
+  sampleModalFlag: false,
+  templates: [],
   currentProject: '',
   projects: [],
   currentFile: '',
@@ -40,7 +42,22 @@ function getFileByName(project, name) {
 let ProjectStore = Reflux.createStore({
   listenables: ProjectActions,
 
-  onChangeTree: function(payload) {
+  onSetSampleModalFlag: async function(payload) {
+    state.sampleModalFlag = payload.flag
+    if (state.sampleModalFlag == true)
+    {
+      // list templates
+      let opts = {type: 'arduino'}
+      let res = await pm.listTpls(opts)
+      if (res.status !== 0)
+        console.log('onSetSampleModalFlag Error', res)
+
+      state.templates = res.content
+    }
+    this.trigger(state)
+  },
+
+  onChangeTree: async function(payload) {
     state.tree = payload
     // TO DO : reconstruct filesystem
     this.trigger(state)

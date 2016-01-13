@@ -1,6 +1,7 @@
 import Reflux from 'reflux'
 
 let ProjectActions = Reflux.createActions({
+  'setSampleModalFlag': {asyncResult: true},
   'changeTree': {asyncResult: true},
   'createProject': {asyncResult: true},
   'removeProject': {asyncResult: true},
