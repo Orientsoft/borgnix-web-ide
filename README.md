@@ -12,7 +12,8 @@ Installation
 3. gulp watch  
 4. supervisor bin/www  
 5. visit in browser http://127.0.0.1:3000  
-Function List
+
+Function List  
 -------------
 1. Project Management  
 2. Compile/Flash Project  
